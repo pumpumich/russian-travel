@@ -76,11 +76,15 @@ body{
     text-transform: uppercase;
 }
 
+.intro_block{
+    max-width: 984px;
+    margin: 0 auto 92px;
+}
+
 .intro{
     max-width: 690px;
-    margin: 0 auto 92px 148px;
-    margin-left: calc((100vw - 928)/2);
-
+    margin: 0;
+    margin-right: auto;
 }
 
 .intro_title{
@@ -354,13 +358,14 @@ body{
     }
     .places_item_photo{
         max-width: 440px;
-        max-height: 440px;
+        height: 100%;
     }
     .places_item_title{
         width: 440px;
     }
     .places_item_paragraph{
         max-width: 456px;
+        font-size: 18px;
     }
     
     .cover{
@@ -387,6 +392,16 @@ body{
 
 }
 
+@media screen (max-width: 920px) and (min-width: 1024px){
+    .places_item_paragraph{
+        font-size: 16px;
+        width: 10%;
+    }
+    .places_item{
+        column-gap: 28px;
+    }
+}
+
 /* Для экрана 768*/
 @media screen and (max-width: 768px){
     .header{
@@ -396,6 +411,7 @@ body{
         margin-right: auto;
         max-width: 142px;
     }
+
     
     .header_language_link{
 
@@ -416,7 +432,15 @@ body{
         margin-left:24px;
     }
 
-    
+    .lead_header{
+        font-size: 13vw;
+        line-height: 1;
+    }
+
+    .lead_subtitle{
+        font-size: 4vw;
+        line-height: 1;
+    }
 
     .intro{
         max-width: 720px;
@@ -473,7 +497,7 @@ body{
 }
 
 /* For phones 320px screen*/
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
     .header{
         max-width: 288px;
     }
@@ -553,7 +577,9 @@ body{
     }
     .places_item_photo{
         min-width: 320px;
+        max-width: 340px;
         min-height: 320px;
+        max-height: 340px;
     }
     .places_item_title{
         width: 288px;
