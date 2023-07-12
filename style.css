@@ -392,6 +392,20 @@ body{
     .header{
         max-width: 720px;
     }
+    .header_logo{
+        margin-right: auto;
+        max-width: 142px;
+    }
+    
+    .header_language_link{
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        align-self: center;
+    }
+
     .lead{
         max-width: 768px;
     }
@@ -401,6 +415,8 @@ body{
     .lead_image_capture{
         margin-left:24px;
     }
+
+    
 
     .intro{
         max-width: 720px;
@@ -453,7 +469,188 @@ body{
     .footer{
         max-width: 720px;
         margin: 0 auto 24px;
+    }
+}
+
+/* For phones 320px screen*/
+@media screen and (min-width: 320px){
+    .header{
+        max-width: 288px;
+    }
+    .lead{
+        max-width: 320px;
+    }
+    .lead_image{
+        max-width: 320px;
+    }
+    .lead_image_capture{
+        margin-left:16px;
+        font-size: 10px;
+    }
+
+    .lead_header{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 44px;
+        margin-bottom: 16px;
+
+    }
+    .lead_subtitle{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 40px;
 
     }
 
+    .intro{
+        max-width: 288px;
+        margin: 0 auto 92px;
+    
+    }
+
+    .intro_title{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 35px;  
+    }
+
+    .intro_text{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 163%;
+    }
+
+    .gallery{
+        display: grid;
+        min-width: 288px;
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        gap: 12px;
+        margin: 0 auto 92px;
+        padding: 0;
+    
+    }
+    
+    .gallery_item{
+        object-fit: contain;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .places{
+        min-width: 320px;
+        gap: 50px;
+    }
+    .places_item{
+        min-width: 320px;
+        row-gap: 32px;
+        
+    }
+    .places_item_photo{
+        min-width: 320px;
+        min-height: 320px;
+    }
+    .places_item_title{
+        width: 288px;
+        margin: 0 auto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 35px;
+    }
+    .places_web{
+        min-width: 288px;
+        margin: 0 auto;
+    }
+    .places_item_paragraph{
+        width: 288px;
+        margin: 0 auto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 163%;
+    }
+    
+    .cover{
+        display: block;
+        width: 100vmin;
+        padding: 0;
+        margin: 0 0 92px 0;
+    }
+
+    .cover_image{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .cover_text{
+        min-width: 288px;
+        max-height: 134px;
+    }
+
+    .cover_text_title{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 35px;
+        margin-bottom: 16px;
+    }
+
+    .cover_text_subtitle{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .footer{
+        max-width: 186px;
+        margin: 0 auto 24px 16px;
+        flex-direction: column;
+    }
+    .footer_links{
+        list-style: none;
+        margin: 0;
+        margin-bottom: 48px;
+        padding: 0;
+        align-self: baseline;
+    }
+    
+    .footer_links li{
+        display: block;
+        margin-bottom: 32px;
+    }
+    
+    .footer_link{
+        margin:0;
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        transition: opacity 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .footer_policy_rights{
+        margin: 0;
+        padding: 0;
+        align-self: baseline;
+    }
+    
+    .footer_policy_author{
+        margin: 0;
+        color: #FFF;
+        text-align: right;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+    }
 }
